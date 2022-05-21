@@ -1,0 +1,1066 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url("/assets/fonts/Comfortaa-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("/assets/fonts/Comfortaa-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Istok Web";
+    src: url("/assets/fonts/IstokWeb-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Istok Web";
+    src: url("/assets/fonts/IstokWeb-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* 1vh равер 10 пикселям */
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    flex-flow: column;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5vh;
+    /* ширина scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #ededed;
+    /* цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0b70dd;
+    /* цвет плашки */
+    border-radius: 20px;
+    /* закругления плашки */
+}
+
+.mainheader {
+    height: 700px;
+    background-image: url(../images/shcool.jpg);
+    background-size: 100% 100%;
+}
+
+.header-color {
+    background-color: rgba(23, 23, 23, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.mainheader>.header-color>.header-text {
+    text-align: center;
+    padding: 15% 0px;
+    color: white;
+}
+
+.mainheader>.header-color>.header-text>.line-white {
+    height: 2px;
+    background-color: white;
+    width: 100%;
+}
+
+.mainheader>.header-color>.header-text>.title {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Comfortaa;
+}
+
+.mainheader>.header-color>.header-text>.paragraph {
+    font-size: 30px;
+}
+
+.head {
+    background-color: #1E90FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.links {
+    display: flex;
+    height: fit-content;
+}
+
+.hrefs {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.hrefs>a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+    width: fit-content;
+    text-align: center;
+}
+
+.hrefs>a:hover {
+    border-color: white;
+}
+
+.head>.logo>img {
+    height: 75px;
+}
+
+.portfolio {
+    height: 300px;
+    background-color: #E0FFFF;
+}
+
+.portfolio>.AboutUsText {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    padding: 20px 0px;
+    color: black;
+}
+
+.text {
+    width: 100%;
+    align-self: center;
+    max-width: 100vh;
+    margin-top: 1vh;
+    font-size: x-large;
+}
+
+.portfolio>.AboutUsText>.line-black {
+    height: 2px;
+    background-color: black;
+    width: 100%;
+}
+
+.portfolio>.AboutUsText>.title {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Comfortaa;
+}
+
+.portfolio>.AboutUsText>.paragraph {
+    font-size: 20px;
+}
+
+.news,
+.blog {
+    margin-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1900px;
+    font-size: 30px;
+}
+
+.head-parag {
+    margin-top: 5vh;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: Comfortaa;
+    text-align: center;
+}
+
+.line-black {
+    width: 50%;
+    align-self: center;
+    height: 2px;
+    background-color: black;
+}
+
+.news-head,
+.blog-head {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-align: center;
+}
+
+.blog-head {
+    display: flex;
+    flex-flow: column;
+}
+
+.news-block,
+.blog-block {
+    display: flex;
+    flex-flow: column;
+    margin-top: 3vh;
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
+    height: 100%;
+    font-size: medium;
+    width: 100%;
+    max-width: 30vh;
+    height: 15vh;
+    border-radius: 1.5vh;
+    border: 0.2vh solid lightgray;
+    transition: 0.2s;
+}
+
+.news-block:hover,
+.blog-block:hover {
+    transform: scale(1.035);
+}
+
+.blog-role {
+    font-size: large;
+}
+
+.news-head,
+.blog-head {
+    font-size: x-large;
+}
+
+.news-text,
+.blog-text {
+    margin: 1vh;
+    text-align: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.contact-form>.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20%;
+}
+
+.contact-form>.form>.contacts>input {
+    outline: none;
+    font-size: large;
+    font-family: Istok Web;
+    border: 1px solid transparent;
+    border-bottom: 1px solid black;
+    display: block;
+    width: 200px;
+    margin: 20px 40px;
+    height: 30px;
+}
+
+textarea {
+    outline: none;
+    font-size: large;
+    font-family: Istok Web;
+    border: 1px solid black;
+    display: block;
+    height: 130px;
+    width: 300px;
+    resize: none;
+}
+
+.contact-form>.contact-form-text {
+    text-align: center;
+    padding: 20px 0px 0 0;
+    color: black;
+}
+
+.contact-form>.contact-form-text>.line-black {
+    height: 2px;
+    background-color: black;
+    width: 100%;
+}
+
+.contact-form>.contact-form-text>.title {
+    font-size: xx-large;
+    margin-bottom: 1.5vh;
+    font-family: Istok Web;
+    font-weight: bold;
+}
+
+.contact-form>.contact-form-text>.paragraph {
+    font-size: 20px;
+}
+
+.main {
+    margin: 0 5%;
+}
+
+.contact-form>a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    width: 200px;
+    height: 40px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.contact-form>a:hover {
+    width: 240px;
+    border-color: black;
+}
+
+.footer {
+    background-color: #1E90FF;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0 0;
+}
+
+.footer>a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid transparent;
+    transition: 0.5s;
+    text-align: center;
+    margin: 10px 20px;
+    padding: 10px 30px;
+}
+
+.footer>a:hover {
+    border-color: white;
+}
+
+.action {
+    display: flex;
+    margin-left: 1.5vh;
+    margin-right: 1.5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    background-color: orange;
+    margin: 20px auto;
+    text-align: center;
+    padding: 1vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    border: 3px solid orange;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    color: orange;
+    background-color: #fff;
+}
+
+.name {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.login {
+    align-items: center;
+    display: flex;
+    margin-right: 3vh;
+    justify-content: center;
+    flex-flow: column;
+    width: fit-content;
+    text-align: center;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+}
+
+.avatar {
+    border-radius: 1.5vh;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #0c70dd;
+}
+
+.icolog {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 1.5vh;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.block-message {
+    width: 100%;
+    max-width: 50vh;
+    padding: 2vh;
+    margin: 2vh;
+    border-radius: 1.5vh;
+    border: 0.1vh solid lightgray;
+}
+
+.block-char {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    max-width: 50vh;
+    padding: 2vh;
+    border: 0.2vh solid lightgray;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.mess-list,
+.photo-list {
+    padding: 1.25vh;
+}
+
+.photo-list {
+    margin-right: 2vh;
+}
+
+.mess-list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.text-list {
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.block-log {
+    display: flex;
+    margin-top: 5vh;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 2vh;
+    border: 0.2vh solid lightgray;
+    border-radius: 1.5vh;
+}
+
+.block-registration>input,
+.form-login>input,
+.form-bloging>input,
+.search>input {
+    font-family: Istok Web;
+    outline: none;
+    font-size: x-large;
+    border: 1px solid transparent;
+    border-bottom: 1px solid black;
+    display: block;
+    width: 300px;
+    margin: 20px 40px;
+    height: 30px;
+}
+
+.head-log {
+    margin-top: 1vh;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: Comfortaa;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.success {
+    background-color: rgba(0, 255, 0, 0.2);
+    width: fit-content;
+    padding: 1vh;
+    border-radius: 1.5vh;
+    border: 0.1vh solid darkgreen;
+    margin-top: 2vh;
+    color: green;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    align-self: center;
+    justify-self: center;
+    font-family: Istok Web;
+    transition: 0.1s;
+}
+
+.error {
+    background-color: rgba(255, 0, 0, 0.2);
+    width: fit-content;
+    padding: 1vh;
+    border-radius: 1.5vh;
+    border: 0.1vh solid darkred;
+    margin-top: 2vh;
+    color: red;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    align-self: center;
+    justify-self: center;
+    font-family: Istok Web;
+    transition: 0.1s;
+}
+
+.img-char {
+    width: 5vh;
+    height: 5vh;
+}
+
+.img-chat {
+    width: 6vh;
+    height: 6vh;
+}
+
+.name-char {
+    font-family: Istok Web;
+    font-size: large;
+}
+
+.last-mess {
+    margin-top: 1vh;
+    font-size: medium;
+    font-family: Istok Web;
+}
+
+.name-chat {
+    font-family: Istok Web;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+.head-chat {
+    margin-top: 2.5vh;
+    width: 100%;
+    max-width: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row;
+}
+
+.kab-block {
+    margin-top: 3.5vh;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    max-width: 100vh;
+    height: fit-content;
+    border: 0.2vh solid gray;
+}
+
+.actions {
+    margin-left: 2.5vh;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}
+
+.name-profile {
+    margin-left: 2vh;
+}
+
+.role-profile {
+    margin-left: 4vh;
+    padding-top: 1vh;
+    font-size: medium;
+}
+
+.profile-kab {
+    padding: 2.5vh;
+    font-family: Istok Web;
+    font-size: x-large;
+}
+
+.img-kab {
+    width: 25vh;
+    height: 25vh;
+    margin-bottom: 2vh;
+}
+
+.chat-list {
+    margin-top: 1vh;
+    display: flex;
+    flex-flow: column;
+    border: 0.1vh solid lightgray;
+    overflow: auto;
+    width: 100%;
+    max-width: 80vh;
+    height: 50vh;
+}
+
+.chat-list::-webkit-scrollbar {
+    width: 0.5vh;
+    transition: 0.5s;
+}
+
+.chat-list::-webkit-scrollbar-track {
+    background: #fff;
+    width: fit-content;
+}
+
+.chat-list::-webkit-scrollbar-thumb {
+    background-color: #0b70dd;
+    border-radius: 20px;
+}
+
+.chat-list::-webkit-scrollbar-thumb:hover {
+    width: 1vh;
+}
+
+.sell-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1vh;
+}
+
+.messages {
+    font-family: Istok Web;
+    padding: 0.7vh;
+    font-size: large;
+    border: 0.1vh solid #1E90FF;
+    border-radius: 1.5vh;
+    width: 100%;
+    max-width: 50vh;
+}
+
+.mess-btn {
+    font-family: Istok Web;
+    color: #fff;
+    background-color: #1E90FF;
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 1vh;
+    padding: 0.5vh;
+    border: 0.3vh solid #1E90FF;
+    border-radius: 1.5vh;
+    transition: 0.5s;
+}
+
+.mess-btn:hover {
+    background-color: #fff;
+    color: #1E90FF;
+}
+
+.mess-my,
+.mess-nomy {
+    display: flex;
+    flex-flow: column;
+    width: fit-content;
+    font-family: Istok Web;
+    max-width: 50vh;
+    background-color: #ededed;
+    border: 0.1vh solid #dcdcdc;
+    border-radius: 1.5vh;
+    margin: 1vh;
+    padding: 1vh;
+}
+
+.mess-my {
+    align-self: end;
+}
+
+.text-mess {
+    font-family: sans-serif;
+    font-size: x-large;
+}
+
+.mess-date {
+    font-size: x-small;
+    text-align: right;
+}
+
+.header-mess {
+    font-size: large;
+    font-family: Istok Web;
+}
+
+.no-mess {
+    padding: 1vh;
+    margin-top: 1vh;
+    border-radius: 1.5vh;
+    font-family: Istok Web;
+    font-size: large;
+    background-color: rgba(22, 22, 22, 0.096);
+    border: 0.1vh solid lightgray;
+    align-self: center;
+}
+
+.myblog {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-profile {
+    padding-top: 1.5vh;
+    width: 100%;
+    max-width: 50vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-radius: 1.5vh;
+    border: 0.2vh solid #dcdcdc;
+}
+
+.headname {
+    text-align: center;
+    padding-right: 1.5vh;
+    padding-left: 1.5vh;
+    font-family: Istok Web;
+    font-size: large;
+    border-bottom: 0.2vh solid #dcdcdc;
+}
+
+.text-profile {
+    text-align: center;
+    font-family: Istok Web;
+    font-size: large;
+    padding: 1vh;
+    border-bottom: 0.2vh solid #dcdcdc;
+}
+
+.date-profile {
+    text-align: right;
+    padding-right: 1vh;
+    font-family: Istok Web;
+    font-size: small;
+}
+
+.block-bloging {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    padding: 1.5vh;
+    width: 100%;
+    max-width: 80vh;
+    border-radius: 1.5vh;
+    border: 0.2vh solid #dcdcdc;
+}
+
+.head-bloging {
+    text-align: center;
+    margin-bottom: 3vh;
+    font-family: Comfortaa;
+    font-size: x-large;
+}
+
+.form-bloging {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.act-bloging {
+    display: flex;
+    align-items: center;
+}
+
+.more-block {
+    margin: 1vh;
+    width: 100%;
+    max-width: 100vh;
+    border: 0.1vh solid #aaa;
+    border-radius: 1.5vh;
+}
+
+.more-head {
+    padding: 1.5vh;
+    font-family: Istok Web;
+    font-size: x-large;
+    border-bottom: 0.1vh solid #aaa;
+}
+
+.more-adhead {
+    padding-top: 1vh;
+    padding-left: 2.5vh;
+    font-family: Istok Web;
+    font-size: large;
+}
+
+.more-text {
+    padding: 1.5vh;
+    font-family: Istok Web;
+    font-size: large;
+    border-bottom: 0.1vh solid #aaa;
+}
+
+.more-date {
+    padding: 1.5vh;
+}
+
+.block-user {
+    padding: 1.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 60vh;
+    border-bottom: 0.1vh solid #aaa;
+    transition: 0.4s;
+}
+
+#searchstart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    width: 100%;
+}
+
+.block-user:hover {
+    background-color: #dcdcdc;
+}
+
+.user-name {
+    text-align: center;
+}
+
+.user-photo {
+    width: 7vh;
+    height: 7vh;
+}
+
+.search {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    max-width: 50vh;
+}
+
+.head-table {
+    padding-left: 0.5vh;
+    margin-right: 0.7vh;
+    border-bottom: 0.2vh solid gray;
+}
+
+.table {
+    margin-top: 2.5vh;
+    padding-left: 1.5vh;
+    border-radius: 15px;
+    border: 0.1vh solid #aaa;
+}
+
+.content-table {
+    padding-left: 1.5vh;
+}
+
+.disc {
+    border-bottom: 0.3vh solid gray;
+    transition: 0.3s;
+}
+
+.disc:hover {
+    background-color: #dedede;
+}
+
+td {
+    padding-right: 2.5px;
+    padding-left: 2.5px;
+}
+
+.goodmark {
+    text-align: center;
+    border-bottom: 0.3vh solid green;
+    transition: 0.3s;
+}
+
+.goodmark:hover {
+    background-color: #67cd7f;
+    -webkit-user-select: none;
+}
+
+.midmark {
+    text-align: center;
+    border-bottom: 0.3vh solid darkgoldenrod;
+    transition: 0.3s;
+}
+
+.midmark:hover {
+    -webkit-user-select: none;
+    background-color: #fcd853;
+}
+
+.badmark {
+    text-align: center;
+    border-bottom: 0.3vh solid red;
+    transition: 0.3s;
+}
+
+.badmark:hover {
+    -webkit-user-select: none;
+    background-color: #f57171;
+}
+
+.block-marks {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 50vh;
+}
+
+.namediscip {
+    font-family: Istok Web;
+    font-size: xx-large;
+}
+
+.sendmarks {
+    display: flex;
+    padding: 1vh;
+    margin-bottom: 2vh;
+    margin-right: 1vh;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border-radius: 1.5vh;
+    border: 0.2vh solid #aaa;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.head-text {
+    font-family: Istok Web;
+    font-size: x-large;
+}
+
+.avgmark {
+    font-family: Istok Web;
+    font-size: x-large;
+}
+
+.block-mark {
+    padding: 0.3vh;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 30vh;
+    border-bottom: 0.1vh solid #dcdcdc;
+}
+
+.checked {
+    background-color: #dedede;
+}
+
+.block-setmark {
+    width: 100%;
+    max-width: 50vh;
+    margin-top: 5vh;
+    padding: 1vh;
+    border: 0.1vh solid #aaa;
+}
+
+.head-setmark,
+.styd-setmark {
+    font-family: Istok Web;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.head-setter {
+    font-family: Istok Web;
+    font-size: x-large;
+    text-align: center;
+}
+
+.setmark {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mark {
+    font-family: Istok Web;
+    font-size: x-large;
+    text-align: center;
+    justify-self: end;
+    padding: 1vh;
+    margin-bottom: 2vh;
+}
+
+input[type='range'] {
+    -webkit-appearance: none !important;
+    background: white;
+    border: 0.1vh solid #aaa;
+    width: 20vh;
+    height: 1vh;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: orange;
+    height: 2.5vh;
+    border: 0.1vh solid transparent;
+    border-radius: 1.5vh;
+    width: 2.5vh;
+}
+
+.block-registration {
+    margin-top: 2vh;
+    width: 100%;
+    max-width: 50vh;
+    padding: 1vh;
+    border: 0.1vh solid #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.combobox {
+    font-family: Istok Web;
+    font-size: large;
+    width: 30vh;
+}
